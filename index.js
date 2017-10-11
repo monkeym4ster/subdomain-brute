@@ -11,7 +11,7 @@ export default class DomainBrute {
     this.target = target
     this.filePath = filePath
     this.concurrency = concurrency
-    this.callback = callback
+    this.callback = callback || (() => {})
     this.bar = null
     Dns.setServers(server)
     return this
