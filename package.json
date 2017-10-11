@@ -1,0 +1,20 @@
+{
+  "name": "subdomain-brute",
+  "version": "1.0.0",
+  "description": "Subdomain brute",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["domain", "subdomain", "brute"],
+  "author": "M4ster <www.m4ster@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "progress": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1"
+  }
+}
