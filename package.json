@@ -1,6 +1,6 @@
 {
   "name": "subdomain-brute",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Subdomain brute",
   "main": "distribution/index.js",
   "scripts": {

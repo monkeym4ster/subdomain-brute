@@ -17,7 +17,7 @@ $ yarn add global subdomain-brute
 ```bash
 $ subdomain --help
 
-subdomain-brute 1.0.1 by M4ster <www.m4ster@gmail.com>
+subdomain-brute 1.0.2 by M4ster <www.m4ster@gmail.com>
 
 Usage: subdomain [options] DOMAIN
 
@@ -35,10 +35,10 @@ Options:
 -h, --help              output usage information
 ```
 
-**Brute "qq.com"**
+**Brute "iqiyi.com"**
 
 ``` 
-$ subdomain --target qq.com --concurrency 50 --out-put qq.txt
+$ subdomain --target iqiyi.com --concurrency 50 --out-put qq.txt
 ```
 
 ### Quick Start
@@ -62,14 +62,20 @@ brute.run().catch(_ => console.log('Has error', _.message))
 **Result**
 
 ```
-t.iqiyi.com	123.125.111.84
-a.iqiyi.com	111.206.13.61, 111.206.13.62, 111.206.13.63, 111.206.13.64, 111.206.13.65
-wx.iqiyi.com	119.188.147.114
-passport.iqiyi.com	60.217.248.115, 123.125.111.79
-upload.iqiyi.com	123.125.84.209
-mail.iqiyi.com	123.125.111.122
-www.iqiyi.com	111.206.13.62, 111.206.13.63, 111.206.13.61, 111.206.13.65, 111.206.13.64
+mail.iqiyi.com - 123.125.111.122 [HTTP 302] - 55ms
+passport.iqiyi.com - 123.125.111.79, 60.217.248.115 [Tengine] - 50ms
+a.iqiyi.com - 111.206.13.63, 111.206.13.62, 111.206.13.64, 111.206.13.61, 111.206.13.65 [QWS] - 90ms
+t.iqiyi.com - 123.125.111.84 [openresty] - 95ms
+upload.iqiyi.com - 123.125.84.209 [Tengine/2.1.2] - 95ms
+www.iqiyi.com - 111.206.13.65, 111.206.13.61, 111.206.13.62, 111.206.13.63, 111.206.13.64 [Apache 1.3.29] - 48ms
+wx.iqiyi.com - 119.188.147.114 [Tengine] - 93ms
+i.iqiyi.com - 123.125.111.84 [openresty] - 54ms
+static.iqiyi.com - 111.206.13.65, 111.206.13.62, 111.206.13.61, 111.206.13.64, 111.206.13.63 [QWS] - 52ms
+help.iqiyi.com - 111.206.13.61, 111.206.13.63, 111.206.13.64, 111.206.13.62, 111.206.13.65 [Tengine] - 50ms
+so.iqiyi.com - 123.125.84.232 [Tengine] - 49ms
+vpn.iqiyi.com - 123.125.118.239 - 94ms
 ......
 
-Running [==================================================] 163/163 100%
+Running [==================================================] 163/163 100% 0.0s
+subdomain-brute: 14159.444ms
 ```
