@@ -1,3 +1,6 @@
+require('babel-polyfill')
+require('babel-register')
+
 import Dns from 'dns'
 import Net from 'net'
 import fs from 'fs'

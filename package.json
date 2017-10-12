@@ -2,8 +2,10 @@
   "name": "subdomain-brute",
   "version": "1.0.1",
   "description": "Subdomain brute",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "compile": "babel src -d lib/ -s",
+    "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -17,12 +19,14 @@
   "author": "M4ster <www.m4ster@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-env": "^2.4.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0",
     "bluebird": "^3.5.1",
     "commander": "^2.11.0",
     "progress": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0"
   }
 }
