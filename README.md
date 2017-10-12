@@ -36,7 +36,7 @@ $ subdomain --help
 **Brute "iqiyi.com"**
 
 ``` 
-$ subdomain --target iqiyi.com --concurrency 50 --out-put qq.txt
+$ subdomain --target iqiyi.com --concurrency 50 --out-put iqiyi.txt
 ```
 
 ### Quick Start
