@@ -1,8 +1,9 @@
+#!/usr/bin/env node
 import fs from 'fs'
 import Path from 'path'
 import Program from 'commander'
-import Pack from './package'
-import SubdomainBrute from './'
+import Pack from '../package'
+import SubdomainBrute from '../'
 
 const opts = Program
   .version(Pack.version)
