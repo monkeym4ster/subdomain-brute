@@ -2,10 +2,10 @@
   "name": "subdomain-brute",
   "version": "1.0.1",
   "description": "Subdomain brute",
-  "main": "lib/index.js",
+  "main": "distribution/index.js",
   "scripts": {
-    "compile": "babel src -d lib/ -s",
-    "prepublish": "npm run compile",
+    "build": "babel source --out-dir distribution -s",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -21,14 +21,11 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "commander": "^2.11.0",
-    "progress": "^2.0.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0"
+    "progress": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-env": "^2.4.1",
-    "babel-polyfill": "^6.26.0",
-    "babel-register": "^6.26.0"
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
   }
 }
