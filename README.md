@@ -17,22 +17,20 @@ $ yarn add global subdomain-brute
 ```bash
 $ subdomain --help
 
-subdomain-brute 1.0.2 by M4ster <www.m4ster@gmail.com>
+  Usage: subdomain [options] DOMAIN
 
-Usage: subdomain [options] DOMAIN
-
-Subdomain brute
+  Subdomain brute
 
 
-Options:
+  Options:
 
--V, --version           output the version number
---target <domain>       target domain name
--o --out-put <file>     Output filename
--c --concurrency <num>  Start specified NUMBER of concurrency
---server <server>       Comma separated list of dns server to query
---file-path <file>      Dictionary file path
--h, --help              output usage information
+    -V, --version           output the version number
+    --target <domain>       target domain name
+    -o --out-put <file>     Output filename
+    -c --concurrency <num>  Start specified NUMBER of concurrency
+    --server <server>       Comma separated list of server to query
+    --file-path <file>      Dictionary file path
+    -h, --help              output usage information
 ```
 
 **Brute "iqiyi.com"**
