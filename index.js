@@ -77,7 +77,8 @@ export default class DomainBrute {
   }
 
   async run () {
-    console.log(`DEBUG: opts:${JSON.stringify(this.opts)}`)
+    const { server, filePath, concurrency, target } = this.opts
+    console.log(`DEBUG: opts:${JSON.stringify({ server, filePath, concurrency, target })}`)
     const fileData = await this.readFile(this.filePath)
     const names = fileData.trim().split('\n')
     const dict = this.generateDict(names)

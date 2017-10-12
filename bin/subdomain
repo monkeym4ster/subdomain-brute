@@ -1,9 +1,13 @@
 #!/usr/bin/env node
-import fs from 'fs'
-import Path from 'path'
-import Program from 'commander'
-import Pack from '../package'
-import SubdomainBrute from '../'
+
+require('babel-polyfill')
+require('babel-register')
+
+const fs = require('fs')
+const Path = require('path')
+const Program = require('commander')
+const Pack = require('../package')
+const SubdomainBrute = require('../').default
 
 const opts = Program
   .version(Pack.version)
@@ -13,7 +17,7 @@ const opts = Program
   .option('-o --out-put <file>', 'Output filename', 'result.txt')
   .option('-c --concurrency <num>', 'Start specified NUMBER of concurrency', Math.abs, 50)
   .option('--server <server>', 'Comma separated list of server to query', val => val.split(','), ['223.5.5.5','223.6.6.6','119.29.29.29','182.254.116.116'])
-  .option('--file-path <file>', 'Dictionary file path', Path.join(__dirname, 'dict', 'small.txt'))
+  .option('--file-path <file>', 'Dictionary file path', Path.join(__dirname, '../', 'dict', 'small.txt'))
   .parse(process.argv)
 
 const bye = n => process.exit(n)

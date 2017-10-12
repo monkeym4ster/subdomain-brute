@@ -19,7 +19,7 @@ $ subdomain --help
 
 subdomain-brute 1.0.1 by M4ster <www.m4ster@gmail.com>
 
-Usage: cli [options] DOMAIN
+Usage: subdomain [options] DOMAIN
 
 Subdomain brute
 
