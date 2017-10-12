@@ -1,16 +1,24 @@
 {
   "name": "subdomain-brute",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Subdomain brute",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["domain", "subdomain", "brute"],
+  "bin": {
+    "subdomain": "./cli.js"
+  },
+  "keywords": [
+    "domain",
+    "subdomain",
+    "brute"
+  ],
   "author": "M4ster <www.m4ster@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.1",
+    "commander": "^2.11.0",
     "progress": "^2.0.0"
   },
   "devDependencies": {
